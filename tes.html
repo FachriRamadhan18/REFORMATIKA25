@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REFORMATIKA 25 — Undangan Inaugurasi Teknik Informatika</title>
+<meta name="description" content="Undangan resmi Inaugurasi REFORMATIKA 25, Jurusan Teknik Informatika. Minggu, 01 November 2026 di Monumen Mandala.">
+<meta name="theme-color" content="#090D16">
+<meta property="og:title" content="INAUGURASI REFORMATIKA 25">
+<meta property="og:description" content="Eksplorasi Solusi dengan Kolaborasi — Minggu, 01 November 2026.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090D16'/%3E%3Crect x='1' y='1' width='30' height='30' rx='7' fill='none' stroke='%23DC2626' stroke-width='2'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='16' font-weight='700' text-anchor='middle' fill='%23EAB308'%3ER%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { obs:'#090D16', crimson:'#DC2626', neon:'#EF4444', gold:'#EAB308', amber2:'#F59E0B', silver:'#CBD5E1' },
+      fontFamily: { sans:['Inter','ui-sans-serif','system-ui','sans-serif'], mono:['Fira Code','ui-monospace','monospace'] }
+    } }
+  };
+</script>
+
+</head>
+
+<body>
+
+<div id="progress" class="fixed top-0 left-0 h-[3px] w-0 z-[70] bg-gradient-to-r from-crimson via-gold to-neon shadow-[0_0_12px_#DC2626]"></div>
+
+<!-- ============================ NAVBAR ============================ -->
+<header class="fixed top-3 sm:top-4 inset-x-0 z-50 px-3 sm:px-6">
+  <nav id="nav" class="glass mx-auto max-w-6xl rounded-2xl px-4 sm:px-5 py-2.5 flex items-center justify-between transition-all duration-300" aria-label="Navigasi utama">
+    <a href="#beranda" class="flex items-center gap-2.5 font-mono font-semibold tracking-tight text-white">
+      <span class="logo-mark" id="navLogo">R</span>
+      <span class="text-sm sm:text-base">REFORMATIKA <span class="text-neon">25</span></span>
+    </a>
+    <ul class="hidden md:flex items-center gap-1">
+      <li><a class="nav-link" href="#pementasan">Pementasan</a></li>
+      <li><a class="nav-link" href="#acara">Acara</a></li>
+      <li><a class="nav-link" href="#panitia">Panitia</a></li>
+      <li><a class="nav-link" href="#perjalanan">Jejak Langkah</a></li>
+      <li><a class="nav-link" href="#galeri">Galeri</a></li>
+    </ul>
+    <a href="#acara" class="hidden md:inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-crimson to-red-900 border border-gold/60 hover:brightness-125 transition">
+      <i data-lucide="map-pin" class="w-4 h-4"></i> Lokasi
+    </a>
+    <button id="menuBtn" class="md:hidden grid place-items-center w-10 h-10 rounded-xl border border-gold/50 text-gold" aria-label="Buka menu" aria-expanded="false" aria-controls="mobileMenu">
+      <i data-lucide="menu" class="w-5 h-5" id="iconMenu"></i>
+      <i data-lucide="x" class="w-5 h-5 hidden" id="iconClose"></i>
+    </button>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden glass mx-auto max-w-6xl mt-2 rounded-2xl p-3">
+    <ul class="flex flex-col">
+      <li><a class="nav-link block" href="#pementasan">Pementasan</a></li>
+      <li><a class="nav-link block" href="#acara">Acara &amp; Lokasi</a></li>
+      <li><a class="nav-link block" href="#panitia">Struktur Kepanitiaan</a></li>
+      <li><a class="nav-link block" href="#perjalanan">Jejak Langkah</a></li>
+      <li><a class="nav-link block" href="#galeri">Galeri Kenangan</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================ A. HERO ============================ -->
+<section id="beranda" class="relative min-h-screen flex items-center overflow-hidden pt-28 pb-20">
+  <canvas id="net" class="absolute inset-0 w-full h-full" aria-hidden="true"></canvas>
+
+  <div class="orb w-72 h-72 sm:w-[28rem] sm:h-[28rem] bg-crimson -top-24 -left-24"></div>
+  <div class="orb w-72 h-72 sm:w-[26rem] sm:h-[26rem] bg-amber2 bottom-0 -right-24" style="animation-delay:-5s;opacity:.18"></div>
+  <svg class="absolute inset-0 w-full h-full opacity-45 pointer-events-none hidden md:block" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g fill="none" stroke="#EF4444" stroke-width="1.5" stroke-opacity=".75">
+      <path class="trace" d="M0 180H180L240 240H430"/>
+      <path class="trace" d="M0 620H120L190 550H360L420 610H520"/>
+      <path class="trace" d="M1440 200H1280L1220 260H1010"/>
+      <path class="trace" d="M1440 640H1300L1230 570H1080L1030 620H940"/>
+    </g>
+    <g fill="#EAB308">
+      <circle cx="430" cy="240" r="5"/><circle cx="520" cy="610" r="5"/>
+      <circle cx="1010" cy="260" r="5"/><circle cx="940" cy="620" r="5"/>
+    </g>
+  </svg>
+  <span class="float-sym text-3xl hidden sm:block" style="top:24%;left:8%">&lt;/&gt;</span>
+  <span class="float-sym text-2xl hidden sm:block" style="top:62%;left:14%;animation-delay:-3s">{ }</span>
+  <span class="float-sym text-3xl hidden sm:block" style="top:30%;right:10%;animation-delay:-6s">01</span>
+  <span class="float-sym text-2xl hidden sm:block" style="top:68%;right:16%;animation-delay:-2s">#!</span>
+
+  <div class="relative z-10 w-full max-w-5xl mx-auto px-5 sm:px-8 text-center">
+    <!-- LOGO UTAMI: ganti CONFIG.logoUrl (default "logo.png") -->
+    <div data-aos="zoom-in" class="flex justify-center">
+      <div class="logo-badge"><img id="heroLogo" src="logo.png" alt="Logo REFORMATIKA 25"></div>
+    </div>
+
+    <div data-aos="fade-down" data-aos-delay="100" class="mt-5 inline-flex items-center gap-2.5 glass rounded-full px-4 py-1.5 font-mono text-[11px] sm:text-xs text-slate-300">
+      <span class="status-dot"></span><span>SYSTEM.ONLINE</span><span class="text-gold">•</span><span data-bind="eventDateShort">01.11.2026</span>
+    </div>
+
+    <h1 class="mt-6 font-black tracking-tight leading-[1.05]" data-aos="zoom-in" data-aos-delay="150">
+      <span class="block font-mono text-base sm:text-2xl lg:text-3xl font-medium tracking-[.3em] text-white glow-text mb-2 sm:mb-4"></span>
+      <span class="block text-[2.4rem] sm:text-7xl lg:text-8xl text-white">REFORMATIKA <span class="gold-text">25</span></span>
+    </h1>
+
+    <p class="mt-5 text-xl sm:text-3xl font-extrabold tracking-tight" data-aos="fade-up" data-aos-delay="200">
+      <span class="grad-text" data-bind="theme">Eksplorasi Solusi dengan Kolaborasi</span>
+    </p>
+
+    <p class="mt-5 term text-sm sm:text-base text-gold min-h-[1.5rem]" data-aos="fade-up" data-aos-delay="250">
+      <span id="typewriter" class="cursor"></span>
+    </p>
+
+    <p class="mt-4 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed text-slate-300" data-aos="fade-up" data-aos-delay="300">
+      Halo, Informatikawan! Dengan hati yang hangat kami menyambutmu di malam inaugurasi — tempat kode, budaya, dan kebersamaan berpadu menjadi satu cerita.
+    </p>
+
+    <div class="mt-10" data-aos="fade-up" data-aos-delay="400">
+      <p class="font-mono text-xs tracking-[.3em] text-slate-400 mb-4">// COUNTDOWN.TO(<span data-bind="eventDateShort">01.11.2026</span>)</p>
+      <div id="countdown" class="grid grid-cols-4 gap-2 sm:gap-4 max-w-2xl mx-auto" role="timer" aria-live="off">
+        <div class="cd-box glass"><span id="cd-days" class="cd-num">00</span><span class="cd-label">Hari</span></div>
+        <div class="cd-box glass"><span id="cd-hours" class="cd-num">00</span><span class="cd-label">Jam</span></div>
+        <div class="cd-box glass"><span id="cd-minutes" class="cd-num">00</span><span class="cd-label">Menit</span></div>
+        <div class="cd-box glass"><span id="cd-seconds" class="cd-num">00</span><span class="cd-label">Detik</span></div>
+      </div>
+      <p id="cd-ended" class="hidden max-w-2xl mx-auto glass rounded-2xl px-6 py-5 font-mono text-gold text-sm sm:text-base glow-text"></p>
+    </div>
+
+    <div class="mt-10" data-aos="fade-up" data-aos-delay="500">
+      <a href="#pementasan" id="ctaOpen" class="btn-primary btn-pulse text-base sm:text-lg"><i data-lucide="mail-open"></i> Buka Undangan</a>
+    </div>
+
+    <a href="#pementasan" class="hidden sm:flex absolute left-1/2 -translate-x-1/2 -bottom-4 flex-col items-center gap-1 text-slate-500 hover:text-gold transition" aria-label="Gulir ke bawah">
+      <span class="font-mono text-[10px] tracking-[.3em]">SCROLL</span>
+      <i data-lucide="chevrons-down" class="w-5 h-5 animate-bounce"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============================ B. PEMENTASAN ============================ -->
+<section id="pementasan" class="relative py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <header class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+      <p class="eyebrow">// pementasan.map()</p>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-extrabold tracking-tight"><span class="grad-text-static">Persembahan Karya &amp; Pementasan</span></h2>
+      <p class="mt-4 text-slate-400 leading-relaxed">Sepuluh persembahan istimewa siap menghidupkan malam inaugurasi. Klik kartu untuk mengenal para penampilnya.</p>
+    </header>
+    <div id="perfGrid" class="mt-14 grid gap-5 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"></div>
+  </div>
+</section>
+
+<!-- ============================ C. INFO ACARA ============================ -->
+<section id="acara" class="relative py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <header class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+      <p class="eyebrow">// event.info()</p>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-extrabold tracking-tight"><span class="grad-text-static">Undangan Resmi</span></h2>
+    </header>
+
+    <div class="mt-14 grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+      <div class="flex flex-col gap-6" data-aos="fade-right">
+        <div class="glass rounded-2xl p-6 sm:p-8 relative overflow-hidden">
+          <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-crimson/25 blur-3xl"></div>
+          <p class="font-mono text-xs text-gold mb-4">&gt; cat undangan.txt</p>
+          <p class="text-lg font-semibold text-white">Salam hangat, Keluarga Besar Teknik Informatika!</p>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Dengan penuh rasa syukur dan kebersamaan, kami mengundang Bapak/Ibu Dosen, Staf, Senior, Alumni, serta seluruh keluarga besar Jurusan Teknik Informatika untuk hadir dalam
+            <strong class="text-neon">Inaugurasi REFORMATIKA 25</strong>.
+          </p>
+          <p class="mt-3 text-slate-300 leading-relaxed">
+            Inaugurasi ini adalah ruang kami merayakan perjalanan, menampilkan karya, dan meresmikan kebersamaan sebagai satu keluarga. Kehadiran dan doa Anda adalah dukungan terbaik bagi kami. Sampai jumpa!
+          </p>
+        </div>
+
+        <div class="glass rounded-2xl p-6 sm:p-7 flex flex-col gap-5">
+          <div class="flex items-start gap-4">
+            <span class="info-ico"><i data-lucide="calendar-days"></i></span>
+            <div>
+              <p class="font-mono text-[11px] tracking-widest text-slate-500">HARI &amp; TANGGAL</p>
+              <p class="text-lg font-bold text-white" data-bind="eventDate">Minggu, 01 November 2026</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="info-ico"><i data-lucide="clock-3"></i></span>
+            <div>
+              <p class="font-mono text-[11px] tracking-widest text-slate-500">WAKTU</p>
+              <p class="text-lg font-bold text-white" data-bind="eventTime">Akan diinformasikan</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="info-ico"><i data-lucide="map-pin"></i></span>
+            <div class="min-w-0">
+              <p class="font-mono text-[11px] tracking-widest text-slate-500">LOKASI</p>
+              <p class="text-lg font-bold text-white" data-bind="locationName">Monumen Mandala</p>
+              <p class="mt-1 text-sm text-slate-400" data-bind="address"></p>
+              <p class="mt-3"><span class="note-badge"><i data-lucide="info" class="w-3.5 h-3.5"></i><span data-bind="locationNote"></span></span></p>
+            </div>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 pt-1">
+            <a id="btnMaps" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary text-sm"><i data-lucide="navigation"></i> Buka di Google Maps</a>
+            <button id="btnCopy" type="button" class="btn-ghost">
+              <span class="icon-copy"><i data-lucide="copy"></i></span>
+              <span class="icon-ok hidden text-gold"><i data-lucide="check"></i></span>
+              <span id="btnCopyLabel">Salin Alamat</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hud min-h-[340px] lg:min-h-0" data-aos="fade-left">
+        <div class="glass rounded-2xl p-2 h-full flex flex-col">
+          <div class="flex items-center justify-between px-3 py-2 font-mono text-[11px] text-slate-400">
+            <span class="flex items-center gap-2"><span class="status-dot"></span> GPS.LOCK</span>
+            <span data-bind="locationName">Monumen Mandala</span>
+          </div>
+          <iframe id="mapFrame" class="map-embed w-full flex-1 min-h-[320px] rounded-xl border-0" title="Peta lokasi acara" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ D. STRUKTUR KEPANITIAAN ============================ -->
+<section id="panitia" class="relative py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <header class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+      <p class="eyebrow">// committee.tree()</p>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-extrabold tracking-tight"><span class="grad-text-static">Struktur Kepanitiaan</span></h2>
+      <p class="mt-4 text-slate-400 leading-relaxed">Orang-orang di balik layar yang merangkai malam inaugurasi ini dengan kerja keras dan kebersamaan.</p>
+    </header>
+
+    <!-- Trisula inti -->
+    <div id="coreGrid" class="mt-16 max-w-3xl mx-auto"></div>
+
+    <!-- Koordinator divisi -->
+    <div class="mt-16 text-center" data-aos="fade-up">
+      <p class="font-mono text-xs tracking-[.3em] text-gold">// KOORDINATOR.DIVISI</p>
+    </div>
+    <div id="divGrid" class="mt-8 flex flex-wrap justify-center gap-4"></div>
+  </div>
+</section>
+
+<!-- ============================ E. OUR JOURNEY ============================ -->
+<section id="perjalanan" class="relative py-20 sm:py-28">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8">
+    <header class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+      <p class="eyebrow">// git log --oneline</p>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-extrabold tracking-tight"><span class="grad-text-static">Jejak Langkah Kami</span></h2>
+      <p class="mt-4 text-slate-400 leading-relaxed">Setiap kegiatan adalah satu commit dalam cerita angkatan. Telusuri perjalanan kami, rantai demi rantai.</p>
+    </header>
+    <ol id="timeline" class="timeline mt-16"></ol>
+  </div>
+</section>
+
+<!-- ============================ F. GALERI ============================ -->
+<section id="galeri" class="relative py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <header class="text-center max-w-3xl mx-auto" data-aos="fade-up">
+      <p class="eyebrow">// gallery.load()</p>
+      <h2 class="mt-3 text-3xl sm:text-5xl font-extrabold tracking-tight"><span class="grad-text-static">Galeri Kenangan</span></h2>
+      <p class="mt-4 text-slate-400 leading-relaxed">Potongan-potongan momen yang kami simpan rapi dalam memori. Klik foto untuk melihatnya lebih besar.</p>
+    </header>
+    <div id="galleryGrid" class="mt-14 grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] sm:auto-rows-[180px] md:auto-rows-[210px] gap-3 sm:gap-4 grid-flow-dense"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="relative border-t border-crimson/30 mt-10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-12 text-center">
+    <div class="inline-flex items-center gap-2.5 font-mono font-semibold text-white">
+      <span class="logo-mark" id="footLogo">R</span> REFORMATIKA <span class="text-neon">25</span>
+    </div>
+    <p class="mt-4 text-sm text-slate-400">Inaugurasi Jurusan Teknik Informatika</p>
+    <p class="mt-5 font-mono text-xs text-gold">console.log("Sampai jumpa di hari H!");</p>
+    <p class="mt-6 text-xs text-slate-600">© 2026 REFORMATIKA 25. Dibuat dengan semangat &amp; kopi.</p>
+  </div>
+</footer>
+
+<!-- ============================ MODAL PEMENTASAN ============================ -->
+<div id="modal" class="hidden fixed inset-0 z-[90] bg-black/80 backdrop-blur-sm overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="min-h-full flex items-center justify-center p-4 sm:p-8">
+    <div id="modalPanel" class="glass relative w-full max-w-3xl rounded-3xl p-6 sm:p-9" style="border-color:rgba(234,179,8,.45);box-shadow:0 0 60px rgba(220,38,38,.3)">
+      <button id="mClose" type="button" class="lb-btn absolute top-3 right-3 sm:top-4 sm:right-4" aria-label="Tutup"><i data-lucide="x"></i></button>
+      <div class="flex items-center gap-4 pr-12">
+        <div class="icon-box shrink-0" id="mIcon"></div>
+        <div>
+          <p class="font-mono text-[11px] text-gold tracking-widest" id="mMeta"></p>
+          <h3 id="mTitle" class="text-2xl sm:text-3xl font-extrabold text-white"></h3>
+        </div>
+      </div>
+      <p id="mDesc" class="mt-5 text-slate-300 leading-relaxed"></p>
+      <p class="mt-7 font-mono text-xs tracking-[.25em] text-gold">// PROFIL.PENAMPIL</p>
+      <div id="mMembers" class="mt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-6"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ LIGHTBOX ============================ -->
+<div id="lightbox" class="hidden fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md" role="dialog" aria-modal="true" aria-label="Penampil foto">
+  <div class="absolute top-4 left-4 sm:top-6 sm:left-6 font-mono text-xs sm:text-sm text-gold" id="lbCount">01 / 01</div>
+  <button id="lbClose" type="button" class="lb-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-10" aria-label="Tutup"><i data-lucide="x"></i></button>
+  <button id="lbPrev" type="button" class="lb-btn absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-10" aria-label="Foto sebelumnya"><i data-lucide="chevron-left"></i></button>
+  <button id="lbNext" type="button" class="lb-btn absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-10" aria-label="Foto selanjutnya"><i data-lucide="chevron-right"></i></button>
+  <div id="lbStage" class="absolute inset-0 flex flex-col items-center justify-center px-14 sm:px-24 py-16">
+    <img id="lbImg" src="" alt="" class="max-w-full max-h-[76vh] object-contain rounded-xl border border-gold/40 shadow-[0_0_60px_rgba(220,38,38,.3)] select-none" draggable="false">
+    <p id="lbCap" class="mt-4 text-center text-sm sm:text-base text-slate-300"></p>
+  </div>
+</div>
+
+<div id="toast" class="glass rounded-full px-5 py-2.5 text-sm text-white flex items-center gap-2" role="status" aria-live="polite">
+  <i data-lucide="check-circle-2" class="w-4 h-4 text-gold"></i><span id="toastMsg">Tersalin!</span>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+/* =====================================================================
+   ⚙️  KONFIGURASI — EDIT BAGIAN INI SAJA
+   Kosongkan "" pada foto → otomatis memakai placeholder.
+   Isi dengan path / URL, contoh: "img/budi.jpg"
+   ===================================================================== */
+const CONFIG = {
+
+  /* --- Logo utama (dipakai di hero, navbar, footer) --- */
+  // Simpan gambar logo "R" merah-emas dengan nama logo.png di folder yang sama dengan index.html
+  logoUrl: "logo.png",
+  logoZoom: 1.45,   // perbesar logo di dalam lencana (1 = tanpa zoom; turunkan jika logo transparan)
+
+  /* --- Teks utama --- */
+  theme: "Eksplorasi Solusi dengan Kolaborasi",
+
+  /* --- Countdown (WITA = +08:00) --- */
+  countdownTarget: "2026-11-01T00:00:00+08:00",
+  countdownEndedText: "🎉 Hari yang dinanti telah tiba — selamat menikmati REFORMATIKA 25!",
+
+  /* --- Acara --- */
+  eventDate: "Minggu, 01 November 2026",
+  eventDateShort: "01.11.2026",
+  eventTime: "Akan diinformasikan",
+  locationName: "Monumen Mandala",
+  address: "Monumen Mandala, Jl. Jenderal Sudirman, Makassar, Sulawesi Selatan",
+  locationNote: "*Lokasi dapat menyesuaikan/berubah sewaktu-waktu",
+  mapsQuery: "Monumen Mandala Makassar",
+  mapsLinkUrl: "",    // opsional: timpa tautan Google Maps
+  mapsEmbedUrl: "",   // opsional: timpa URL embed peta
+
+  typewriterLines: [
+    '> git commit -m "Inaugurasi REFORMATIKA 25"',
+    '> npm run collaborate --explore-solutions',
+    '> sudo invite --all informatikawan',
+    '> ./kebersamaan.sh --forever'
+  ],
+
+  /* --- 10 PEMENTASAN ---
+     icon: nama ikon Lucide, atau "fan" untuk SVG kipas kustom.
+     members: jumlah diatur lewat panjang array. Isi name & photo.            */
+  performers: [
+    { name: "Anggaru", icon: "sword",
+      description: "Ikrar keberanian dan kesetiaan khas Bugis-Makassar, dibawakan dengan gerak tegas yang penuh wibawa.",
+      members: [ { name: "Khalil Ahmad", photo: "logo.png" } ] },
+
+    { name: "Paduppa", icon: "fan",
+      description: "Tari penyambutan yang anggun, menyapa setiap tamu dengan keramahan khas Bugis-Makassar.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" }, { name: "Nama Penampil 3", photo: "" }, { name: "Nama Penampil 4", photo: "" }, { name: "Nama Penampil 5", photo: "" } ] },
+
+    { name: "Teater", icon: "drama",
+      description: "Panggung cerita yang mengaduk tawa, haru, dan renungan lewat lakon karya kami sendiri.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" }, { name: "Nama Penampil 3", photo: "" }, { name: "Nama Penampil 4", photo: "" }, { name: "Nama Penampil 5", photo: "" }, { name: "Nama Penampil 6", photo: "" }, { name: "Nama Penampil 7", photo: "" }, { name: "Nama Penampil 8", photo: "" }, { name: "Nama Penampil 9", photo: "" }, { name: "Nama Penampil 10", photo: "" }, { name: "Nama Penampil 11", photo: "" }, { name: "Nama Penampil 12", photo: "" } ] },
+
+    { name: "Puisi", icon: "feather",
+      description: "Bait-bait yang merangkai rasa, perjuangan, dan harapan angkatan menjadi kata-kata yang berkilau.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" }, { name: "Nama Penampil 3", photo: "" } ] },
+
+    { name: "Tari 3 Macam", icon: "users",
+      description: "Tiga ragam tarian yang dibawakan berkelompok, memadukan tradisi dan kreativitas dalam satu panggung.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" }, { name: "Nama Penampil 3", photo: "" }, { name: "Nama Penampil 4", photo: "" }, { name: "Nama Penampil 5", photo: "" }, { name: "Nama Penampil 6", photo: "" }, { name: "Nama Penampil 7", photo: "" }, { name: "Nama Penampil 8", photo: "" }, { name: "Nama Penampil 9", photo: "" }, { name: "Nama Penampil 10", photo: "" }, { name: "Nama Penampil 11", photo: "" }, { name: "Nama Penampil 12", photo: "" } ] },
+
+    { name: "Sito'bo", icon: "shield",
+      description: "Tradisi kebersamaan yang menghadirkan semangat ketangkasan, sportivitas, dan persaudaraan.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" } ] },
+
+    { name: "Pepe' Pepe'", icon: "flame",
+      description: "Atraksi api yang memukau, menyala sebagai simbol semangat yang tak pernah padam.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" }, { name: "Nama Penampil 3", photo: "" }, { name: "Nama Penampil 4", photo: "" }, { name: "Nama Penampil 5", photo: "" } ] },
+
+    { name: "Akustik", icon: "guitar",
+      description: "Petikan gitar dan lantunan nada yang menghangatkan suasana, dari lagu kenangan hingga karya orisinal.",
+      members: [ { name: "Nama Penampil 1", photo: "" }, { name: "Nama Penampil 2", photo: "" }, { name: "Nama Penampil 3", photo: "" }, { name: "Nama Penampil 4", photo: "" }, { name: "Nama Penampil 5", photo: "" }, { name: "Nama Penampil 6", photo: "" } ] },
+
+    { name: "MC / Master of Ceremony", icon: "mic",
+      description: "Pemandu acara yang menghidupkan suasana, merangkai setiap penampilan menjadi alur malam yang mengalir.",
+      members: [ { name: "Nama MC 1", photo: "" }, { name: "Nama MC 2", photo: "" }, { name: "Nama MC 3", photo: "" } ] },
+
+    { name: "Pengiring", icon: "music",
+      description: "Tim musik pengiring yang menjadi denyut nada di balik setiap pementasan.",
+      members: [ { name: "Nama Pengiring 1", photo: "" }, { name: "Nama Pengiring 2", photo: "" }, { name: "Nama Pengiring 3", photo: "" }, { name: "Nama Pengiring 4", photo: "" }, { name: "Nama Pengiring 5", photo: "" } ] }
+  ],
+
+  /* --- STRUKTUR KEPANITIAAN --- */
+  committee: {
+    leaders: {
+      ketua:     { name: "Nama Ketua Panitia",      photo: "" },
+      sekretaris:{ name: "Nama Sekretaris Panitia", photo: "" },
+      bendahara: { name: "Nama Bendahara Panitia",  photo: "" }
+    },
+    divisions: [
+      { division: "Perlengkapan",              name: "Nama Koordinator", photo: "" },
+      { division: "Acara",                     name: "Nama Koordinator", photo: "" },
+      { division: "Koordinator Lapangan",      name: "Nama Koordinator", photo: "" },
+      { division: "Publikasi dan Dokumentasi", name: "Nama Koordinator", photo: "" },
+      { division: "Konsumsi",                  name: "Nama Koordinator", photo: "" },
+      { division: "Hubungan Masyarakat",       name: "Nama Koordinator", photo: "" },
+      { division: "Keamanan",                  name: "Nama Koordinator", photo: "" }
+    ]
+  },
+
+  /* --- JEJAK LANGKAH (teks) --- key harus sama dengan key di photos.journey */
+  journey: [
+    { key: "pbak",            title: "PBAK",                       icon: "graduation-cap", desc: "Langkah pertama kami di kampus: dari wajah-wajah asing menjadi satu keluarga besar Teknik Informatika." },
+    { key: "informaticSport", title: "Informatic Sport",           icon: "trophy",         desc: "Keringat, sorak, dan tawa di lapangan. Kompetisi yang justru mempererat solidaritas kami." },
+    { key: "lkmm",            title: "Panitia LKMM",               icon: "clipboard-list", desc: "Belajar mengelola acara dan tim dari balik layar, bekerja bersama demi lahirnya kader-kader baru." },
+    { key: "mubes",           title: "Panitia Mubes",              icon: "messages-square",desc: "Mengawal musyawarah besar dengan tanggung jawab, diskusi panjang, dan kerja sama yang solid." },
+    { key: "bukber",          title: "Buka Bersama",               icon: "moon-star",      desc: "Berbagi hangat di waktu berbuka. Momen sederhana yang mengikat kebersamaan kami." },
+    { key: "itLeadersCamp",   title: "IT Leaders Camp",            icon: "tent",           desc: "Kamp pembentukan pemimpin berjiwa teknologi: belajar, berdiskusi, dan bertumbuh bersama." },
+    { key: "ldk",             title: "Latihan Dasar Kepemimpinan", icon: "flag",           desc: "Menempa mental, disiplin, dan jiwa kepemimpinan sebagai fondasi sebelum kami melangkah ke panggung ini." }
+  ],
+
+  /* --- FOTO GALERI & JEJAK LANGKAH --- */
+  photos: {
+    gallery: [ "", "", "", "", "", "", "", "", "" ],   // 9 slot
+    journey: {
+      pbak:            ["", "", "", ""],
+      informaticSport: ["", "", "", ""],
+      lkmm:            ["", "", "", ""],
+      mubes:           ["", "", "", ""],
+      bukber:          ["", "", "", ""],
+      itLeadersCamp:   ["", "", "", ""],
+      ldk:             ["", "", "", ""]
+    }
+  }
+};
+/* ===================== AKHIR KONFIGURASI ===================== */
+
+
+(function () {
+  'use strict';
+  const $  = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const pad = n => String(n).padStart(2, '0');
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  const FAN_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21 3 10.3A14 14 0 0 1 21 10.3Z"/><path d="M12 21 7.2 7.8M12 21V7M12 21l4.8-13.2"/></svg>';
+  const iconHTML = name => name === 'fan' ? FAN_SVG : `<i data-lucide="${esc(name)}"></i>`;
+
+  /* ---------- Placeholder gambar ---------- */
+  const COLORS = ['#DC2626', '#EAB308', '#EF4444'];
+  function placeholderPhoto(label, i) {
+    const c = COLORS[i % 3];
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#090D16"/><stop offset="1" stop-color="#1F1418"/></linearGradient><pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="${c}" stroke-opacity=".18"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/><rect width="800" height="600" fill="url(#p)"/><rect x="260" y="215" width="280" height="170" rx="16" fill="none" stroke="${c}" stroke-opacity=".75" stroke-dasharray="8 8"/><text x="400" y="305" text-anchor="middle" font-family="monospace" font-size="30" font-weight="700" fill="${c}">${label}</text><text x="400" y="345" text-anchor="middle" font-family="monospace" font-size="16" fill="#94a3b8">REFORMATIKA 25</text></svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+  function placeholderAvatar(name, i) {
+    const c = COLORS[i % 3];
+    const ini = (String(name).trim().split(/\s+/).map(w => w[0]).join('').slice(0, 2) || '?').toUpperCase().replace(/[<>&"']/g, '');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1220"/><stop offset="1" stop-color="#090D16"/></linearGradient></defs><rect width="300" height="300" fill="url(#g)"/><circle cx="150" cy="115" r="52" fill="${c}" fill-opacity=".85"/><path d="M45 285c0-58 47-95 105-95s105 37 105 95Z" fill="${c}" fill-opacity=".85"/><text x="150" y="132" text-anchor="middle" font-family="monospace" font-size="42" font-weight="700" fill="#090D16">${ini}</text></svg>`;
+    return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+  }
+  /* Pasang src + fallback bila file gagal dimuat */
+  function setImg(img, url, fallback) {
+    img.addEventListener('error', () => { if (img.src !== fallback) img.src = fallback; });
+    img.src = (url && url.trim()) || fallback;
+  }
+
+  /* ---------- Bind teks ---------- */
+  $$('[data-bind]').forEach(el => {
+    const v = CONFIG[el.getAttribute('data-bind')];
+    if (v !== undefined && v !== '') el.textContent = v;
+  });
+
+  /* ---------- Logo ---------- */
+  const logoFallback = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="r" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EF4444"/><stop offset="1" stop-color="#991B1B"/></linearGradient></defs><rect x="8" y="8" width="184" height="184" rx="40" fill="#090D16" stroke="#EAB308" stroke-width="5"/><rect x="22" y="22" width="156" height="156" rx="30" fill="none" stroke="#DC2626" stroke-width="3"/><text x="100" y="140" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="120" font-weight="900" fill="url(#r)">R</text></svg>`);
+  // Logo asli diperbesar (zoom) agar margin putih bawaan gambar terpotong rapi di lencana
+  function setLogo(img) {
+    img.style.transform = `scale(${CONFIG.logoZoom || 1})`;
+    img.addEventListener('error', () => { img.style.transform = 'none'; });
+    setImg(img, CONFIG.logoUrl, logoFallback);
+  }
+  setLogo($('#heroLogo'));
+  ['#navLogo', '#footLogo'].forEach(sel => {
+    const box = $(sel); box.textContent = '';
+    const im = document.createElement('img'); im.alt = 'Logo REFORMATIKA 25'; setLogo(im); box.appendChild(im);
+  });
+
+  /* ---------- Render: Pementasan ---------- */
+  const perfGrid = $('#perfGrid');
+  perfGrid.innerHTML = CONFIG.performers.map((p, i) => `
+    <div data-aos="fade-up" data-aos-delay="${(i % 4) * 100}">
+      <button type="button" class="card-glow perf-card p-6" data-perf="${i}" aria-haspopup="dialog" aria-label="Lihat detail pementasan ${esc(p.name)}">
+        <div class="flex items-start justify-between">
+          <div class="icon-box">${iconHTML(p.icon)}</div>
+          <span class="font-mono text-xs text-slate-500">${pad(i + 1)}</span>
+        </div>
+        <h3 class="mt-5 text-xl font-bold text-white">${esc(p.name)}</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">${esc(p.description)}</p>
+        <div class="mt-5 flex items-center justify-between">
+          <span class="count-chip"><i data-lucide="users" class="w-3 h-3"></i> ${p.members.length} Orang</span>
+          <span class="font-mono text-[11px] text-neon">lihat profil ›</span>
+        </div>
+      </button>
+    </div>`).join('');
+
+  /* ---------- Render: Kepanitiaan ---------- */
+  const L = CONFIG.committee.leaders;
+  const avatarRing = (person, idx, cls, size) => {
+    return `<div class="av-ring ${cls}" style="width:${size}px;height:${size}px"><img class="avatar" data-person="${idx}" alt="Foto ${esc(person.name)}" loading="lazy"></div>`;
+  };
+  $('#coreGrid').innerHTML = `
+    <div class="relative flex flex-col items-center" data-aos="zoom-in">
+      <div class="relative">
+        <i data-lucide="crown" class="absolute -top-7 left-1/2 -translate-x-1/2 w-7 h-7 text-gold" style="filter:drop-shadow(0 0 8px rgba(234,179,8,.8))"></i>
+        ${avatarRing(L.ketua, 'k', 'lead', 168)}
+      </div>
+      <h3 class="mt-5 text-xl sm:text-2xl font-extrabold text-white text-center">${esc(L.ketua.name)}</h3>
+      <span class="role-tag mt-2">KETUA PANITIA</span>
+    </div>
+    <div class="relative mx-auto mt-10 sm:mt-12 grid grid-cols-2 gap-6 sm:gap-24 max-w-xl pt-8">
+      <div class="podium-line left-1/2 -top-6 w-[2px] h-8 hidden sm:block" style="top:-1.5rem"></div>
+      <div class="podium-line top-2 h-[2px] hidden sm:block" style="left:25%;right:25%;top:.5rem;background:linear-gradient(90deg,rgba(220,38,38,.7),rgba(234,179,8,.8),rgba(220,38,38,.7))"></div>
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+        ${avatarRing(L.sekretaris, 's', '', 120)}
+        <h3 class="mt-4 text-base sm:text-lg font-bold text-white text-center">${esc(L.sekretaris.name)}</h3>
+        <span class="role-tag mt-2">SEKRETARIS</span>
+      </div>
+      <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+        ${avatarRing(L.bendahara, 'b', '', 120)}
+        <h3 class="mt-4 text-base sm:text-lg font-bold text-white text-center">${esc(L.bendahara.name)}</h3>
+        <span class="role-tag mt-2">BENDAHARA</span>
+      </div>
+    </div>`;
+  const corePeople = { k: L.ketua, s: L.sekretaris, b: L.bendahara };
+  $$('#coreGrid img[data-person]').forEach((img, i) => {
+    const key = img.dataset.person; setImg(img, corePeople[key].photo, placeholderAvatar(corePeople[key].name, i));
+  });
+
+  $('#divGrid').innerHTML = CONFIG.committee.divisions.map((d, i) => `
+    <div class="c-card glass w-[calc(50%-.5rem)] sm:w-[calc(33.333%-.75rem)] lg:w-[calc(25%-.75rem)]" data-aos="fade-up" data-aos-delay="${(i % 4) * 80}">
+      <div class="av-ring mx-auto" style="width:92px;height:92px"><img class="avatar" data-div="${i}" alt="Foto ${esc(d.name)}" loading="lazy"></div>
+      <h3 class="mt-4 text-sm sm:text-base font-bold text-white leading-snug">${esc(d.name)}</h3>
+      <span class="role-tag mt-2" style="white-space:normal">${esc(d.division)}</span>
+    </div>`).join('');
+  $$('#divGrid img[data-div]').forEach(img => {
+    const d = CONFIG.committee.divisions[+img.dataset.div];
+    setImg(img, d.photo, placeholderAvatar(d.name, +img.dataset.div));
+  });
+
+  /* ---------- Render: Jejak Langkah ---------- */
+  $('#timeline').innerHTML = CONFIG.journey.map((j, i) => `
+    <li class="t-item" data-aos="fade-up">
+      <span class="t-node">${iconHTML(j.icon)}</span>
+      <article class="t-card glass">
+        <p class="font-mono text-[11px] text-gold">commit #${pad(i + 1)}</p>
+        <h3 class="mt-1 text-xl font-bold text-white">${esc(j.title)}</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">${esc(j.desc)}</p>
+        <div class="mini-grid" data-journey="${esc(j.key)}">
+          ${[0,1,2,3].map(n => `<button type="button" class="mini-photo" aria-label="Perbesar foto ${esc(j.title)} ${n + 1}"><img data-caption="${esc(j.title)} — Foto ${n + 1}" alt="${esc(j.title)} foto ${n + 1}" loading="lazy"></button>`).join('')}
+        </div>
+      </article>
+    </li>`).join('');
+
+  /* ---------- Render: Galeri (bento) ---------- */
+  const GALLERY_SIZES = ['col-span-2 row-span-2', '', 'row-span-2', '', 'col-span-2', '', 'row-span-2', 'col-span-2', ''];
+  $('#galleryGrid').innerHTML = GALLERY_SIZES.map((sz, i) => `
+    <figure class="gallery-item ${sz}" data-aos="zoom-in" data-aos-delay="${(i % 3) * 80}">
+      <button type="button" class="photo-btn" aria-label="Buka foto ${i + 1}"><img data-caption="Kenangan ${i + 1}" alt="Foto kenangan ${i + 1}" loading="lazy"><span class="g-overlay"><i data-lucide="maximize-2"></i></span></button>
+    </figure>`).join('');
+
+  const galleryImgs = $$('#galleryGrid img');
+  galleryImgs.forEach((img, i) => setImg(img, (CONFIG.photos.gallery || [])[i], placeholderPhoto('FOTO ' + pad(i + 1), i)));
+  const journeyGroups = $$('[data-journey]').map(grid => {
+    const key = grid.dataset.journey, imgs = $$('img', grid);
+    imgs.forEach((img, i) => setImg(img, ((CONFIG.photos.journey || {})[key] || [])[i], placeholderPhoto('FOTO ' + (i + 1), i)));
+    return imgs;
+  });
+
+  /* ---------- Icons & AOS (setelah render) ---------- */
+  if (window.lucide) lucide.createIcons();
+  if (window.AOS) AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 70, disable: reduceMotion });
+
+  /* ---------- Maps ---------- */
+  const q = encodeURIComponent(CONFIG.mapsQuery || CONFIG.locationName);
+  $('#btnMaps').href = CONFIG.mapsLinkUrl || `https://www.google.com/maps/search/?api=1&query=${q}`;
+  $('#mapFrame').src = CONFIG.mapsEmbedUrl || `https://www.google.com/maps?q=${q}&hl=id&z=16&output=embed`;
+
+  /* ---------- Toast & salin ---------- */
+  const toast = $('#toast'); let toastTimer;
+  function showToast(msg) {
+    $('#toastMsg').textContent = msg; toast.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+  }
+  async function copyText(text) {
+    try { await navigator.clipboard.writeText(text); return true; }
+    catch (e) {
+      const ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;opacity:0;top:0;left:0'; document.body.appendChild(ta); ta.select();
+      let ok = false; try { ok = document.execCommand('copy'); } catch (_) {}
+      ta.remove(); return ok;
+    }
+  }
+  $('#btnCopy').addEventListener('click', async () => {
+    const ok = await copyText(CONFIG.address);
+    showToast(ok ? 'Alamat berhasil disalin' : 'Gagal menyalin — salin manual ya');
+    if (!ok) return;
+    const btn = $('#btnCopy');
+    $('.icon-copy', btn).classList.add('hidden'); $('.icon-ok', btn).classList.remove('hidden');
+    $('#btnCopyLabel').textContent = 'Tersalin!';
+    setTimeout(() => {
+      $('.icon-copy', btn).classList.remove('hidden'); $('.icon-ok', btn).classList.add('hidden');
+      $('#btnCopyLabel').textContent = 'Salin Alamat';
+    }, 2000);
+  });
+
+  /* ---------- Countdown ---------- */
+  const targetMs = new Date(CONFIG.countdownTarget).getTime();
+  const cdEls = { d: $('#cd-days'), h: $('#cd-hours'), m: $('#cd-minutes'), s: $('#cd-seconds') };
+  const lastVal = {};
+  function setNum(k, v) {
+    if (lastVal[k] === v) return; lastVal[k] = v;
+    const el = cdEls[k]; el.textContent = v; el.classList.remove('tick'); void el.offsetWidth; el.classList.add('tick');
+  }
+  let cdTimer;
+  function updateCountdown() {
+    const diff = targetMs - Date.now();
+    if (isNaN(targetMs) || diff <= 0) {
+      $('#countdown').classList.add('hidden');
+      const e = $('#cd-ended'); e.textContent = CONFIG.countdownEndedText; e.classList.remove('hidden');
+      clearInterval(cdTimer); return;
+    }
+    const t = Math.floor(diff / 1000);
+    setNum('d', pad(Math.floor(t / 86400))); setNum('h', pad(Math.floor((t % 86400) / 3600)));
+    setNum('m', pad(Math.floor((t % 3600) / 60))); setNum('s', pad(t % 60));
+  }
+  updateCountdown(); cdTimer = setInterval(updateCountdown, 1000);
+
+  /* ---------- Typewriter ---------- */
+  (function () {
+    const el = $('#typewriter'), lines = CONFIG.typewriterLines || [];
+    if (!el || !lines.length) return;
+    if (reduceMotion) { el.textContent = lines[0]; return; }
+    let li = 0, ci = 0, del = false;
+    (function step() {
+      const full = lines[li];
+      if (!del) { ci++; el.textContent = full.slice(0, ci); if (ci === full.length) { del = true; return setTimeout(step, 1900); } return setTimeout(step, 55); }
+      ci--; el.textContent = full.slice(0, ci);
+      if (ci === 0) { del = false; li = (li + 1) % lines.length; return setTimeout(step, 400); }
+      setTimeout(step, 24);
+    })();
+  })();
+
+  /* ---------- Network canvas ---------- */
+  (function () {
+    const canvas = $('#net'); if (!canvas) return;
+    const ctx = canvas.getContext('2d'), hero = canvas.parentElement;
+    const NC = ['220,38,38', '239,68,68', '234,179,8'];
+    let w = 0, h = 0, nodes = [], running = true, raf = 0; const mouse = { x: -999, y: -999 };
+    function resize() {
+      const r = hero.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = r.width; h = r.height; canvas.width = w * dpr; canvas.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = Math.round(Math.min(75, Math.max(26, (w * h) / 20000)));
+      nodes = Array.from({ length: count }, () => ({ x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .35, vy: (Math.random() - .5) * .35, r: Math.random() * 1.6 + .9, c: NC[Math.floor(Math.random() * NC.length)] }));
+      if (reduceMotion) draw();
+    }
+    function draw() {
+      ctx.clearRect(0, 0, w, h);
+      if (!reduceMotion) for (const n of nodes) { n.x += n.vx; n.y += n.vy; if (n.x < 0 || n.x > w) n.vx *= -1; if (n.y < 0 || n.y > h) n.vy *= -1; }
+      for (let i = 0; i < nodes.length; i++) {
+        const a = nodes[i];
+        for (let j = i + 1; j < nodes.length; j++) {
+          const b = nodes[j], d = Math.hypot(a.x - b.x, a.y - b.y);
+          if (d < 130) { ctx.strokeStyle = `rgba(${a.c},${(1 - d / 130) * .38})`; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); }
+        }
+        const md = Math.hypot(a.x - mouse.x, a.y - mouse.y);
+        if (md < 170) { ctx.strokeStyle = `rgba(253,224,71,${(1 - md / 170) * .6})`; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(mouse.x, mouse.y); ctx.stroke(); }
+        ctx.fillStyle = `rgba(${a.c},.85)`; ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill();
+      }
+      if (!reduceMotion && running) raf = requestAnimationFrame(draw);
+    }
+    hero.addEventListener('pointermove', e => { const r = hero.getBoundingClientRect(); mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; });
+    hero.addEventListener('pointerleave', () => { mouse.x = mouse.y = -999; });
+    window.addEventListener('resize', resize);
+    if ('IntersectionObserver' in window) new IntersectionObserver(([en]) => { const was = running; running = en.isIntersecting; if (running && !was && !reduceMotion) raf = requestAnimationFrame(draw); }).observe(hero);
+    resize(); if (!reduceMotion) raf = requestAnimationFrame(draw);
+  })();
+
+  /* ---------- Navbar ---------- */
+  const menuBtn = $('#menuBtn'), mobileMenu = $('#mobileMenu');
+  function setMenu(open) {
+    mobileMenu.classList.toggle('hidden', !open);
+    $('#iconMenu').classList.toggle('hidden', open); $('#iconClose').classList.toggle('hidden', !open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+  }
+  menuBtn.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href'); if (id.length < 2) return;
+    const t = $(id); if (!t) return;
+    e.preventDefault(); setMenu(false); t.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  }));
+  const links = $$('.nav-link');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id)); }), { rootMargin: '-45% 0px -50% 0px' });
+    ['pementasan', 'acara', 'panitia', 'perjalanan', 'galeri'].forEach(id => { const s = document.getElementById(id); if (s) io.observe(s); });
+    new IntersectionObserver(([en]) => { if (en.isIntersecting) links.forEach(l => l.classList.remove('active')); }, { rootMargin: '-45% 0px -50% 0px' }).observe(document.getElementById('beranda'));
+  }
+  const nav = $('#nav'), bar = $('#progress'); let ticking = false;
+  function onScroll() {
+    const y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (max > 0 ? (y / max) * 100 : 0) + '%'; nav.classList.toggle('scrolled', y > 20); ticking = false;
+  }
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
+  /* ---------- Modal pementasan ---------- */
+  const modal = { el: $('#modal'), open: false, trigger: null };
+  function openModal(i, trigger) {
+    const p = CONFIG.performers[i];
+    $('#mTitle').textContent = p.name;
+    $('#mMeta').textContent = `PEMENTASAN ${pad(i + 1)} • ${p.members.length} ORANG`;
+    $('#mDesc').textContent = p.description;
+    $('#mIcon').innerHTML = iconHTML(p.icon);
+    $('#mMembers').innerHTML = p.members.map((m, n) => `
+      <div class="text-center">
+        <img class="member-photo mx-auto" style="max-width:110px" alt="Foto ${esc(m.name)}" loading="lazy">
+        <p class="mt-2 text-sm font-semibold text-white leading-snug">${esc(m.name)}</p>
+      </div>`).join('');
+    $$('#mMembers img').forEach((img, n) => setImg(img, p.members[n].photo, placeholderAvatar(p.members[n].name, n)));
+    if (window.lucide) lucide.createIcons();
+    modal.trigger = trigger; modal.open = true;
+    modal.el.classList.remove('hidden'); modal.el.scrollTop = 0;
+    requestAnimationFrame(() => modal.el.classList.add('open'));
+    document.body.style.overflow = 'hidden'; $('#mClose').focus();
+  }
+  function closeModal() {
+    if (!modal.open) return; modal.open = false;
+    modal.el.classList.remove('open');
+    setTimeout(() => { if (!modal.open) modal.el.classList.add('hidden'); }, 260);
+    document.body.style.overflow = ''; if (modal.trigger) modal.trigger.focus();
+  }
+  $$('.perf-card').forEach(b => b.addEventListener('click', () => openModal(+b.dataset.perf, b)));
+  $('#mClose').addEventListener('click', closeModal);
+  modal.el.addEventListener('click', e => { if (e.target === modal.el || e.target.classList.contains('min-h-full')) closeModal(); });
+
+  /* ---------- Lightbox ---------- */
+  const lb = { el: $('#lightbox'), img: $('#lbImg'), cap: $('#lbCap'), count: $('#lbCount'), prev: $('#lbPrev'), next: $('#lbNext'), close: $('#lbClose'), list: [], i: 0, trigger: null, open: false };
+  const collect = imgs => imgs.map(im => ({ src: im.src, caption: im.dataset.caption || im.alt || '' }));
+  function lbRender() {
+    const n = lb.list.length, item = lb.list[lb.i];
+    lb.img.style.opacity = 0; const show = () => { lb.img.style.opacity = 1; };
+    lb.img.onload = show; lb.img.onerror = show; lb.img.src = item.src; lb.img.alt = item.caption; setTimeout(show, 450);
+    lb.cap.textContent = item.caption; lb.count.textContent = `${pad(lb.i + 1)} / ${pad(n)}`;
+    const multi = n > 1; lb.prev.style.display = lb.next.style.display = multi ? '' : 'none';
+    if (multi) [1, -1].forEach(d => { new Image().src = lb.list[(lb.i + d + n) % n].src; });
+  }
+  function lbOpen(list, index, trigger) {
+    lb.list = list; lb.i = index; lb.trigger = trigger || null; lb.open = true;
+    lb.el.classList.remove('hidden'); requestAnimationFrame(() => lb.el.classList.add('open'));
+    document.body.style.overflow = 'hidden'; lbRender(); lb.close.focus();
+  }
+  function lbClose() {
+    if (!lb.open) return; lb.open = false; lb.el.classList.remove('open');
+    setTimeout(() => { if (!lb.open) lb.el.classList.add('hidden'); }, 260);
+    document.body.style.overflow = ''; if (lb.trigger) lb.trigger.focus();
+  }
+  const lbStep = d => { lb.i = (lb.i + d + lb.list.length) % lb.list.length; lbRender(); };
+  lb.prev.addEventListener('click', e => { e.stopPropagation(); lbStep(-1); });
+  lb.next.addEventListener('click', e => { e.stopPropagation(); lbStep(1); });
+  lb.close.addEventListener('click', e => { e.stopPropagation(); lbClose(); });
+  lb.el.addEventListener('click', e => { if (e.target === lb.el || e.target.id === 'lbStage') lbClose(); });
+
+  document.addEventListener('keydown', e => {
+    if (lb.open) {
+      if (e.key === 'Escape') lbClose();
+      else if (e.key === 'ArrowLeft') lbStep(-1);
+      else if (e.key === 'ArrowRight') lbStep(1);
+      else if (e.key === 'Tab') {
+        const f = [lb.close, lb.prev, lb.next].filter(b => b.style.display !== 'none');
+        const idx = f.indexOf(document.activeElement); e.preventDefault();
+        f[(idx + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+      }
+    } else if (modal.open) {
+      if (e.key === 'Escape') closeModal();
+      else if (e.key === 'Tab') {
+        const f = [$('#mClose')]; e.preventDefault(); f[0].focus();
+      }
+    }
+  });
+  let touchX = null;
+  lb.el.addEventListener('touchstart', e => { touchX = e.changedTouches[0].clientX; }, { passive: true });
+  lb.el.addEventListener('touchend', e => {
+    if (touchX === null) return; const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+    if (Math.abs(dx) > 50 && lb.list.length > 1) lbStep(dx < 0 ? 1 : -1);
+  }, { passive: true });
+
+  galleryImgs.forEach((img, i) => img.closest('.photo-btn').addEventListener('click', e => lbOpen(collect(galleryImgs), i, e.currentTarget)));
+  journeyGroups.forEach(imgs => imgs.forEach((img, i) => img.closest('.mini-photo').addEventListener('click', e => lbOpen(collect(imgs), i, e.currentTarget))));
+})();
+</script>
+</body>
+</html>
